@@ -54,14 +54,14 @@
     margin-bottom: 30px;
 }
 
-.tag-line
-{
+.tag-line{
     color: black;
     font-size: 18px;
     text-align: center;
     justify-content: center;
     display: flex;
     margin-bottom: 20px;
+    font-style: italic;
 }
 
 .about-me-section {
@@ -161,7 +161,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: hsl(0, 100%, 99%);
+    background-color: hsl(0, 0%, 27%);
     padding: 60px 20px;
     min-height: 100vh;
 }
@@ -169,9 +169,9 @@
     display: block;
     font-size: 50px;
     font-weight: bold;
-    color: #000000;
+    color: #fcfcfc;
     margin-bottom: 20px;
-    text-align: left;
+    text-align: center;
 }
 
 .skills-list {
@@ -179,19 +179,19 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding: 20px;
-    list-style-type: none;
 }
 
-.skill {
-    font-size: 18px;
-    color: #000000;
-    background-color: hsl(159, 70%, 49%);
-    padding: 10px 20px;
-    margin: 5px;
-    border-radius: 4px;
+.skill-card {
+    background-color: #d2d2d2;
+    border: 3px solid #f70000;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 21px;
 }
 
-.skill:hover {
-    background-color: hsl(214, 58%, 52%);
-    cursor: pointer;
+.skill-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #a02424;
 }
