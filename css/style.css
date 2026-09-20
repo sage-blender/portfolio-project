@@ -64,7 +64,7 @@
     margin-bottom: 20px;
 }
 
-.about-me {
+.about-me-section {
     display: flex;
     font-size: 30px;
     flex-direction: column;
@@ -153,4 +153,45 @@
 .about-me-background {
     width: 100%;
     max-width: 800px;
+}
+
+.skills-section {
+    display: flex;
+    font-size: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 100%, 99%);
+    padding: 60px 20px;
+    min-height: 100vh;
+}
+.skills-title{
+    display: block;
+    font-size: 50px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.skills-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    list-style-type: none;
+}
+
+.skill {
+    font-size: 18px;
+    color: #000000;
+    background-color: hsl(159, 70%, 49%);
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 4px;
+}
+
+.skill:hover {
+    background-color: hsl(214, 58%, 52%);
+    cursor: pointer;
 }
