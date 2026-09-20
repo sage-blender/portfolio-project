@@ -14,68 +14,14 @@
     min-height: 100vh;
 }
 
-.name{
-    color: rgb(37, 37, 121);
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-}
-
-.description{
-    color: black;
-    font-size: 18px;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.tag-line
-{
-    color: black;
-    font-size: 18px;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.about-me {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: hsl(0, 2%, 83%);
-    padding: 60px 20px;
-}
-
-.about-me-title {
-    display: block;
-    font-size: 29px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
-}
-.about-me-description {
-    font-size: 18px;
-    color: #644a4a;
-    max-width: 800px;
-    text-align: center;
-    line-height: 1.6;
-}
-
 .profile-image {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    border-radius: 10%;
     display: block;
     margin: 0 auto;
-    border: 3px solid #ccc;
+    border: 2px solid #060606;
+    margin-bottom: 10px;
 }
 
 .button {
@@ -87,4 +33,124 @@
     border: none;
     border-radius: 4px;
     text-decoration: none;
+}
+
+.name{
+    color: rgb(37, 37, 121);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.description{
+    font-size: 18px;
+    color: #000000;
+    max-width: 800px;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.tag-line
+{
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.about-me {
+    display: flex;
+    font-size: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 2%, 83%);
+    padding: 60px 20px;
+    min-height: 100vh;
+}
+
+.about-title {
+    display: block;
+    font-size: 50px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.bio-title {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.bio-description {
+    font-size: 18px;
+    color: #000000;
+    max-width: 800px;
+    text-align: left;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.hobbies-title{
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.hobbies-list {
+    font-size: 18px;
+    color: #000000;
+    max-width: 800px;
+    text-align: left;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.background-title {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.background-description {
+    font-size: 18px;
+    color: #000000;
+    max-width: 800px;
+    text-align: left;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.background {
+    display: flex;
+    font-size: 29px;
+    font-weight: bold;
+    color: #cd6161;
+    flex-direction: column;
+    margin-top: 40px;
+    text-align: left;
+}
+
+/*AI Help Me This*/
+.about-me-bio, 
+.about-me-hobbies, 
+.about-me-background {
+    width: 100%;
+    max-width: 800px;
 }
