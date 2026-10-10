@@ -34,6 +34,9 @@
     border-radius: 4px;
     text-decoration: none;
 }
+.button:hover {
+    background-color: #0056b3;
+}
 
 .name{
     color: rgb(37, 37, 121);
@@ -62,8 +65,9 @@
     display: flex;
     margin-bottom: 20px;
     font-style: italic;
-}
+}   
 
+/* About Section */
 .about-me-section {
     display: flex;
     font-size: 30px;
@@ -154,6 +158,8 @@ AI Help Me with This
     max-width: 800px;
 }
 
+
+/* Skills Section */
 .skills-section {
     display: flex;
     font-size: 30px;
@@ -174,9 +180,10 @@ AI Help Me with This
 }
 
 .skills-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    gap: 20px;
+    justify-content: center;
     padding: 10px;
 }
 
@@ -186,7 +193,16 @@ AI Help Me with This
     padding: 10px;
     margin: 10px;
     border-radius: 21px;
-    width: 200px; /*gi add nako*/
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skill-card:hover {
+    background-color: #713737;
+    color: #fffefe;
+    transition: 0.3s ease-in-out;
 }
 
 .skill-card h3 {
@@ -282,3 +298,56 @@ AI Help Me with This
     padding: 10px 24px;
     border-radius: 8px;
 }
+.project-button:hover {
+    background-color: #333;
+}
+
+/* Education Section */
+.education-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 27%);
+    padding: 60px 20px;
+    min-height: 100vh;
+}
+
+.education-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.education-table {
+    width: fit-content;
+    max-width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    display: block;
+    overflow-x: auto;
+}
+
+.education-table th,
+.education-table td {
+    border: 1px solid #bbb;
+    padding: 14px 18px;
+    text-align: left;
+    font-size: 17px;
+    color: #333;
+}
+
+.education-table th {
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.education-table tbody tr:hover {
+    background-color: #34d6c9;
+}
+
