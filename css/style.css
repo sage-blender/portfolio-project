@@ -3,6 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --nav-height: 60px;
+}
+
+img {
+    max-width: 100%;
+}
+
 .body{
     display: flex;
     flex-direction: column;
@@ -11,16 +20,16 @@
     padding: 20px;
     align-items: center;
     justify-content: center;
-    min-height: calc(100vh - 60px);
+    min-height: calc(100vh - var(--nav-height));
 }
 
 /* Navigation Section */
 html {
-    scroll-padding-top: 60px;
+    scroll-padding-top: var(--nav-height);
 }
 
 .navbar {
-    height: 60px;
+    height: var(--nav-height);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -118,7 +127,7 @@ html {
     align-items: center;
     background-color: hsl(0, 2%, 83%);
     padding: 60px 20px;
-    min-height: calc(100vh - 60px);
+    min-height: calc(100vh - var(--nav-height));
 }
 
 .about-title {
@@ -193,8 +202,7 @@ html {
     text-align: left;
 }
 
-AI Help Me with This
-.about-me-bio, 
+.about-me-bio,
 .about-me-hobbies, 
 .about-me-background {
     width: 100%;
@@ -211,7 +219,7 @@ AI Help Me with This
     align-items: center;
     background-color: hsl(0, 0%, 27%);
     padding: 60px 20px;
-    min-height: calc(100vh - 60px);
+    min-height: calc(100vh - var(--nav-height));
 }
 .skills-title{
     display: block;
@@ -264,7 +272,7 @@ AI Help Me with This
     align-items: center;
     background-color: #808080;
     padding: 60px 20px;
-    min-height: calc(100vh - 60px);
+    min-height: calc(100vh - var(--nav-height));
 }
 
 .projects-title {
@@ -282,6 +290,7 @@ AI Help Me with This
     justify-content: center;
     align-items: stretch;
     gap: 62px;
+    width: 100%;
 }
 
 .project-card {
@@ -292,7 +301,8 @@ AI Help Me with This
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     padding: 12px 24px 24px;
-    width: 375px;
+    width: 100%;
+    max-width: 375px;
 }
 
 .project-card img {
@@ -353,7 +363,7 @@ AI Help Me with This
     align-items: center;
     background-color: hsl(0, 0%, 27%);
     padding: 60px 20px;
-    min-height: calc(100vh - 60px);
+    min-height: calc(100vh - var(--nav-height));
 }
 
 .education-title {
@@ -402,7 +412,7 @@ AI Help Me with This
     align-items: center;
     background-color: hsl(0, 2%, 83%);
     padding: 30px 20px;
-    min-height: calc(100vh - 60px);
+    min-height: calc(100vh - var(--nav-height));
 }
 
 .contact-title {
@@ -492,5 +502,141 @@ AI Help Me with This
     font-family: Arial, sans-serif;
     font-size: 16px;
     color: #fff;
+}
+
+/* Responsive Design */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .nav-list {
+        gap: 6px;
+    }
+
+    .nav-link {
+        font-size: 15px;
+        padding: 8px 12px;
+    }
+
+    .about-title,
+    .skills-title {
+        font-size: 40px;
+    }
+
+    .skills-list {
+        grid-template-columns: repeat(2, 200px);
+    }
+
+    .projects-list {
+        gap: 30px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    /* the nav wraps into two rows, so it needs more height */
+    :root {
+        --nav-height: 80px;
+    }
+
+    .nav-list {
+        justify-content: center;
+        padding: 8px 10px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    .body {
+        padding: 20px 16px;
+    }
+
+    .name {
+        font-size: 24px;
+    }
+
+    .description,
+    .tag-line {
+        font-size: 16px;
+    }
+
+    .about-me-section,
+    .skills-section,
+    .projects-section,
+    .education-section {
+        padding: 40px 16px;
+    }
+
+    .contact-section {
+        padding: 30px 16px;
+    }
+
+    .about-title,
+    .skills-title {
+        font-size: 34px;
+    }
+
+    .projects-title,
+    .education-title,
+    .contact-title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .bio-title,
+    .hobbies-title,
+    .background-title {
+        font-size: 24px;
+    }
+
+    .bio-description,
+    .background-description,
+    .hobbies-list {
+        font-size: 16px;
+    }
+
+    .bio-description,
+    .background-description {
+        text-align: left;
+    }
+
+    .skills-list {
+        grid-template-columns: 1fr;
+        width: 100%;
+        max-width: 280px;
+        padding: 0;
+    }
+
+    .skill-card {
+        width: 100%;
+        margin: 0;
+    }
+
+    .projects-list {
+        gap: 24px;
+    }
+
+    .project-card {
+        padding: 12px 18px 20px;
+    }
+
+    .project-card p {
+        text-align: left;
+    }
+
+    .education-table th,
+    .education-table td {
+        padding: 10px 12px;
+        font-size: 15px;
+    }
+
+    .contact-form {
+        padding: 20px 18px;
+    }
+
+    .send-button {
+        width: 100%;
+    }
 }
 
